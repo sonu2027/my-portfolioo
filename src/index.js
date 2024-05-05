@@ -5,6 +5,8 @@ const xmark = document.getElementById("xmark");
 const bar = document.getElementById("bar");
 xmark.style.display = "none";
 
+// 
+
 hamburgerMenu.addEventListener("click", () => {
   const navUl = document.createElement("ul");
   navUl.style.padding = "1rem 0";
