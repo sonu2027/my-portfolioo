@@ -1,12 +1,9 @@
 {
   "scripts": {
-    "dev": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+    "dev": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch "
   },
-  "type": "commonjs",
+  "type": "module",
   "devDependencies": {
     "tailwindcss": "^3.4.3"
-  },
-  "dependencies": {
-    "appwrite": "^14.0.1"
   }
 }

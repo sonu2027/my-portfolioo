@@ -1,8 +1,6 @@
-// import service from "./appwrite/config.js";
 const hamburgerMenu = document.getElementById("hamburgerMenu");
 console.log("hamburgerMenu", hamburgerMenu);
 const navItems = document.getElementById("navItems");
-
 const xmark = document.getElementById("xmark");
 const bar = document.getElementById("bar");
 xmark.style.display = "none";
@@ -40,26 +38,26 @@ hamburgerMenu.addEventListener("click", () => {
         a.href = "./assets/newResume.pdf";
         a.className = "flex gap-x-2 justify-center items-center";
 
-        const div1=document.createElement("div1")
-        const div2=document.createElement("div1")
-        const div3=document.createElement("div1")
-        div2.innerHTML="Download"
-        div3.innerHTML="Resume"
-        div1.appendChild(div2)
-        div1.appendChild(div3)
+        const div1 = document.createElement("div1");
+        const div2 = document.createElement("div1");
+        const div3 = document.createElement("div1");
+        div2.innerHTML = "Download";
+        div3.innerHTML = "Resume";
+        div1.appendChild(div2);
+        div1.appendChild(div3);
 
-        const div4=document.createElement("div4")
-        div4.className="text-2xl"
+        const div4 = document.createElement("div4");
+        div4.className = "text-2xl";
 
-        const i=document.createElement("i")
-        i.className="fa-solid fa-download"
+        const i = document.createElement("i");
+        i.className = "fa-solid fa-download";
 
-        div4.appendChild(i)
+        div4.appendChild(i);
 
-        a.appendChild(div1)
-        a.appendChild(div4)
+        a.appendChild(div1);
+        a.appendChild(div4);
 
-        li.appendChild(a)
+        li.appendChild(a);
       } else {
         li.style.padding = "0.5rem 0";
         li.innerText = e;
@@ -282,7 +280,7 @@ cancel.addEventListener("click", (event) => {
   popup.style.display = "none";
 });
 
-submit.addEventListener("click", async(event) => {
+submit.addEventListener("click", async (event) => {
   event.preventDefault();
   const name = document.querySelector(".name");
   console.log("innertext: ", comment.value);
@@ -303,12 +301,6 @@ submit.addEventListener("click", async(event) => {
     div3.appendChild(div2);
     div3.appendChild(div1);
     allcomment.appendChild(div3);
-    const comments={
-      name:name.value,
-      comment:comment.value
-    }
-    const res=await service.createPost({comments})
-    console.log(("res is ", res));
     comment.value = "";
     name.value = "";
     popup.style.display = "none";
