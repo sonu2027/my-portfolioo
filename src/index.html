@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>Sonu mondal</title>
+    <!-- Hamburger menu -->
+    <script
+      src="https://kit.fontawesome.com/fd689afc01.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg-blue-50">
+    <nav class="bg-white border-b-2 shadow-2xl flex flex-col sticky top-0">
+      <div class="flex justify-between items-center py-4 px-2">
+        <div
+          class="text-blue-500 text-2xl sm:text-3xl md:text-4xl cursor-pointer active:text-black"
+        >
+          Sonu
+        </div>
+        <div id="hamburgerMenu" class="text-gray-300 md:hidden">
+          <div class="text-3xl sm:text-4xl md:text-5xl" id="bar">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="text-3xl sm:text-4xl md:text-5xl" id="xmark">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+        </div>
+        <ul
+          class="hidden md:text-lg font-medium md:flex md:justify-center md:items-center md:gap-x-4 md:mr-28"
+        >
+          <li class="hover:text-blue-600 active:text-black cursor-pointer">
+            Intro
+          </li>
+          <li class="hover:text-blue-600 active:text-black cursor-pointer">
+            Skill
+          </li>
+          <li class="hover:text-blue-600 active:text-black cursor-pointer">
+            Project
+          </li>
+          <li class="hover:text-blue-600 active:text-black cursor-pointer">
+            Education
+          </li>
+          <li class="hover:text-blue-600 active:text-black cursor-pointer">
+            Coding profile
+          </li>
+          <li
+            class="flex text-sm justify-center items-center gap-x-2 bg-blue-600 text-white rounded-md px-4 py-1 active:text-black hover:text-green-300 cursor-pointer"
+          >
+            <a
+              class="flex gap-x-2 justify-center items-center"
+              target="_blank"
+              href="./assets/newResume.pdf"
+            >
+              <div>
+                <div>Download</div>
+                <div>Resume</div>
+              </div>
+              <div class="text-2xl">
+                <i class="fa-solid fa-download"></i>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div
+        id="navItems"
+        class="md:hidden text-xl sm:text-2xl border-t-2 border-gray-300 border-solid"
+      ></div>
+    </nav>
+
+    <div class="flex flex-col justify-center items-center mt-10" id="intro">
+      <div
+        class="flex flex-col justify-center items-center md:flex-row-reverse gap-y-4 md:gap-x-20 lg:gap-x-32"
+      >
+        <img
+          class="rounded-full w-44 md:w-52 lg:w-72"
+          src="./assets/ProfilePhoto.jpg"
+          alt="Profile Photo"
+        />
+        <div class="text-center text-3xl sm:text-2xl md:text-3xl lg:text-4xl">
+          Hello 👋, i’m
+          <div class="text-lg font-medium text-blue-600 lg:text-4xl">
+            Sonu Mondal
+          </div>
+          MERN stack developer
+        </div>
+      </div>
+      <div
+        class="md:w-2/3 lg:w-2/3 w-5/6 sm:w-4/6 text-gray-500 font-medium mt-4 md:text-lg"
+      >
+        <div>
+          As a MERN stack developer, I excel in crafting dynamic web
+          applications with MongoDB, Express.js, React.js, and Node.js. With
+          expertise in both front and back end development.
+        </div>
+        <div class="mt-2">
+          I deliver seamless user experiences while leveraging cutting-edge
+          technologies. Passionate about innovation and quality, I strive to
+          create high-impact solutions that meet business needs and exceed user
+          expectations.
+        </div>
+      </div>
+      <div
+        class="flex justify-center items-center gap-x-6 mt-20 md:gap-x-10 lg:gap-x-16"
+      >
+        <div
+          class="text-4xl sm:text-5xl lg:text-6xl rounded-full text-blue-900"
+        >
+          <a target="_blank" href="https://github.com/sonu2027"
+            ><i class="fa-brands fa-square-github"></i
+          ></a>
+        </div>
+        <div
+          class="text-4xl sm:text-5xl lg:text-6xl rounded-full text-blue-900"
+        >
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/sonu-mondal-2380981a7/"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
+        <div
+          class="text-4xl sm:text-5xl lg:text-6xl rounded-full text-blue-900"
+        >
+          <a target="_blank" href="https://twitter.com/So_nu2027"
+            ><i class="fa-brands fa-square-twitter"></i
+          ></a>
+        </div>
+        <div
+          class="text-4xl sm:text-5xl lg:text-6xl rounded-full text-blue-900"
+        >
+          <a target="_blank" href="https://www.facebook.com/sonu.mandal.9883/"
+            ><i class="fa-brands fa-square-facebook"></i
+          ></a>
+        </div>
+        <div
+          class="text-4xl sm:text-5xl lg:text-6xl rounded-full text-blue-900"
+        >
+          <a target="_blank" href="https://www.instagram.com/so__nu2027/"
+            ><i class="fa-brands fa-square-instagram"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="text-2xl md:text-3xl mt-20 font-medium mx-4 sm:mx-8 md:mx-12 lg:mx-20 skill"
+    >
+      Languages and technologies
+    </div>
+
+    <div
+      class="bg-white grid grid-cols-2 gap-y-4 gap-x-2 p-2 rounded-md mt-4 mx-4 border-2 border-solid border-gray-300 shadow-2xl shadow-slate-500 sm:grid-cols-3 sm:mx-8 md:grid-cols-4 md:mx-12 lg:grid-cols-5 lg:mx-20"
+      id="skill"
+      data-aos="fade-up"
+    >
+      <div
+        class="flex justify-center items-center flex-col text-2xl font-medium rounded-md p-2 bg-violet-600 text-white"
+      >
+        <img class="h-24 w-24" src="./assets/skills/c.png" alt="C Logo" />
+        <p>C</p>
+      </div>
+
+      <div
+        class="flex justify-center items-center flex-col text-2xl font-medium rounded-md p-2 bg-violet-600 text-white"
+      >
+        <img class="h-24 w-24" src="./assets/skills/cpp.png" alt="C++ Logo" />
+        <p>C++</p>
+      </div>
+
+      <div
+        class="flex justify-center items-center flex-col text-2xl font-medium rounded-md p-2 bg-violet-600 text-white"
+      >
+        <img class="h-24 w-24" src="./assets/skills/oops.png" alt="OOPs Logo" />
+        <p>OOPs</p>
+      </div>
+
+      <div
+        class="flex justify-center items-center flex-col text-2xl font-medium rounded-md p-2 bg-violet-600 text-white"
+      >
+        <img
+          class="h-24 w-24"
+          src="./assets/skills/Python.png"
+          alt="Python Logo"
+        />
+        <p>Python</p>
+      </div>
+
+      <div
+        class="flex justify-center items-center flex-col text-2xl font-medium rounded-md p-2 bg-violet-600 text-white"
+      >
+        <img class="h-24 w-24" src="./assets/skills/dsa.png" alt="DSA Logo" />
+        <p>DSA</p>
+      </div>
+
+      <div
+        class="flex justify-center items-center flex-col text-2xl font-medium rounded-md p-2 bg-violet-600 text-white"
+      >
+        <img
+          class="h-24 w-24"
+          src="./assets/skills/linux.png"
+          alt="Linux Logo"
+        />
+        <p>Linux</p>
+      </div>
+
+      <div
+        class="flex justify-center items-center flex-col text-2xl font-medium rounded-md p-2 bg-violet-600 text-white"
+      >
+        <img
+          class="h-24 w-24"
+          src="./assets/skills/html.webp"
+          alt="HTML Logo"
+        />
+        <p>HTML5</p>
+      </div>
+
+      <div
+        class="flex justify-center items-center flex-col text-2xl font-medium rounded-md p-2 bg-violet-600 text-white"
+      >
+        <img class="h-24 w-24" src="./assets/skills/css.png" alt="CSS Logo" />
+        <p>CSS3</p>
+      </div>
+
+      <div
+        class="flex justify-center items-center flex-col text-2xl font-medium rounded-md p-2 bg-violet-600 text-white"
+      >
+        <img
+          class="h-24 w-24"
+          src="./assets/skills/talwind.png"
+          alt="Talwind CSS Logo"
+        />
+        <p>Talwind</p>
+      </div>
+
+      <div
+        class="flex justify-center items-center flex-col text-2xl font-medium rounded-md p-2 bg-violet-600 text-white"
+      >
+        <img class="h-24 w-24" src="./assets/skills/js.png" alt="JS Logo" />
+        <p>JavaScript</p>
+      </div>
+
+      <div
+        class="flex justify-center items-center flex-col text-2xl font-medium rounded-md p-2 bg-violet-600 text-white"
+      >
+        <img
+          class="h-24 w-24"
+          src="./assets/skills/react.webp"
+          alt="React Logo"
+        />
+        <p>React</p>
+      </div>
+
+      <div
+        class="flex justify-center items-center flex-col text-2xl font-medium rounded-md p-2 bg-violet-600 text-white"
+      >
+        <img
+          class="h-24 w-24"
+          src="./assets/skills/redux.svg"
+          alt="Redux Logo"
+        />
+        <p>Redux</p>
+      </div>
+
+      <div
+        class="flex justify-center items-center flex-col text-2xl font-medium rounded-md p-2 bg-violet-600 text-white"
+      >
+        <img class="h-24 w-24" src="./assets/skills/git.png" alt="GIT Logo" />
+        <p>GIT</p>
+      </div>
+
+      <div
+        class="flex justify-center items-center flex-col text-2xl font-medium rounded-md p-2 bg-violet-600 text-white"
+      >
+        <img class="h-24 w-24" src="./assets/skills/mySql.png" alt="SQl Logo" />
+        <p>MySQL</p>
+      </div>
+
+      <div
+        class="flex justify-center items-center flex-col text-2xl font-medium rounded-md p-2 bg-violet-600 text-white"
+      >
+        <img
+          class="h-24 w-24"
+          src="./assets/skills/mongoDB.png"
+          alt="SQl Logo"
+        />
+        <p>MongoDB</p>
+      </div>
+
+      <div
+        class="flex justify-center items-center flex-col text-2xl font-medium rounded-md p-2 bg-violet-600 text-white"
+      >
+        <img
+          class="h-24 w-24"
+          src="./assets/skills/nodejs.png"
+          alt="SQl Logo"
+        />
+        <p>Node.js</p>
+      </div>
+
+      <div
+        class="flex justify-center items-center flex-col text-2xl font-medium rounded-md p-2 bg-violet-600 text-white"
+      >
+        <img
+          class="h-24 w-24"
+          src="./assets/skills/express.png"
+          alt="SQl Logo"
+        />
+        <p>Express.js</p>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
