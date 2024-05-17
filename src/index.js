@@ -102,10 +102,10 @@ hamburgerMenu.addEventListener("click", () => {
         optionItem3.appendChild(a3);
         optionItem4.appendChild(a4);
 
-        optionItem1.className = "text-sm my-1 underline text-blue-600";
-        optionItem2.className = "text-sm my-1 underline text-blue-600";
-        optionItem3.className = "text-sm my-1 underline text-blue-600";
-        optionItem4.className = "text-sm my-1 underline text-blue-600";
+        optionItem1.className = "text-sm my-1 underline text-blue-600 hover:text-blue-800";
+        optionItem2.className = "text-sm my-1 underline text-blue-600 hover:text-blue-800";
+        optionItem3.className = "text-sm my-1 underline text-blue-600 hover:text-blue-800";
+        optionItem4.className = "text-sm my-1 underline text-blue-600 hover:text-blue-800";
 
         a1.href = "https://leetcode.com/u/sonu2027/";
         a2.href = "https://www.geeksforgeeks.org/user/takeinfo2u/";
@@ -152,7 +152,7 @@ hamburgerMenu.addEventListener("click", () => {
     const skillBar = document.querySelectorAll("ul");
 
     let currentScrollPos = window.scrollY;
-    console.log("currentScrollPos in small screen" , currentScrollPos);
+    console.log("currentScrollPos in small screen", currentScrollPos);
     if (currentScrollPos >= 0 && currentScrollPos < 650) {
       skillBar[1].children[0].style.color = "blue";
       skillBar[1].children[0].style.textDecoration = "underline";
@@ -330,7 +330,11 @@ window.addEventListener("scroll", () => {
     skillBar[0].children[3].style.borderBottom = "2px solid blue";
   }
 
-  console.log("currentScrollPos in big screen", currentScrollPos, skillBar[0].children[1]);
+  console.log(
+    "currentScrollPos in big screen",
+    currentScrollPos,
+    skillBar[0].children[1]
+  );
 
   console.log("(navItems.querySelector66", navItems.querySelector("ul"));
   // if (navItems.querySelector("ul")!=null) {
@@ -340,23 +344,23 @@ window.addEventListener("scroll", () => {
   // }
 });
 
-// const codingProfile = document.getElementsByClassName("coding-profile");
-// const arrowup = document.getElementsByClassName("arrowup");
-// console.log("arrowup", arrowup);
-// const arrowdown = document.getElementsByClassName("arrowdown");
+const codingProfile = document.getElementsByClassName("coding-profile");
+const arrowup = document.getElementsByClassName("arrowup");
+console.log("arrowup", arrowup);
+const arrowdown = document.getElementsByClassName("arrowdown");
 
-// arrowup[0].addEventListener("click", () => {
-//   console.log("clicked");
-//   codingProfile[0].style.display = "block";
-//   arrowdown[0].style.display="block"
-//   arrowup[0].style.display="none"
-// });
+arrowup[0].addEventListener("click", () => {
+  console.log("clicked");
+  codingProfile[0].style.display = "block";
+  arrowdown[0].style.display = "block";
+  arrowup[0].style.display = "none";
+});
 
-// arrowdown[0].addEventListener("click", () => {
-//   codingProfile[0].style.display = "none";
-//   arrowdown[0].style.display="none"
-//   arrowup[0].style.display="block"
-// });
+arrowdown[0].addEventListener("click", () => {
+  codingProfile[0].style.display = "none";
+  arrowdown[0].style.display = "none";
+  arrowup[0].style.display = "block";
+});
 
 const addButton = document.querySelector(".addButton");
 const comment = document.querySelector(".comment");
