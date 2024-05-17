@@ -13,14 +13,18 @@
   </head>
 
   <body class="bg-blue-50">
-    <nav class="bg-white border-b-2 shadow-2xl flex flex-col sticky top-0">
-      <div class="flex justify-between items-center py-4 px-2">
+    <nav
+      class="bg-blue-100 border-b-2 shadow-2xl shadow-blue-950 flex flex-col sticky top-0"
+    >
+      <div
+        class="flex justify-between items-center py-4 px-2 md:justify-center"
+      >
         <div
-          class="text-blue-500 text-2xl sm:text-3xl md:text-4xl cursor-pointer active:text-black"
+          class="text-blue-600 text-2xl sm:text-3xl md:text-4xl md:hidden cursor-pointer active:text-black"
         >
-          Sonu
+          Sonu Mondal
         </div>
-        <div id="hamburgerMenu" class="text-gray-300 md:hidden">
+        <div id="hamburgerMenu" class="text-blue-500 md:hidden">
           <div class="text-3xl sm:text-4xl md:text-5xl" id="bar">
             <i class="fa-solid fa-bars"></i>
           </div>
@@ -31,21 +35,65 @@
         <ul
           class="hidden md:text-lg font-medium md:flex md:justify-center md:items-center md:gap-x-4 md:mr-28"
         >
-          <li class="hover:text-blue-600 active:text-black cursor-pointer">
+          <li class="hover:text-blue-600 active:text-black cursor-pointer pb-1">
             Intro
           </li>
-          <li class="hover:text-blue-600 active:text-black cursor-pointer">
+          <li class="hover:text-blue-600 active:text-black cursor-pointer pb-1">
             Skill
           </li>
-          <li class="hover:text-blue-600 active:text-black cursor-pointer">
+          <li class="hover:text-blue-600 active:text-black cursor-pointer pb-1">
             Project
           </li>
-          <li class="hover:text-blue-600 active:text-black cursor-pointer">
+          <li class="hover:text-blue-600 active:text-black cursor-pointer pb-1">
             Education
           </li>
-          <li class="hover:text-blue-600 active:text-black cursor-pointer">
-            Coding profile
-          </li>
+          
+          <div
+            class="active:text-black cursor-pointer pb-1 flex flex-col justify-center items-center"
+          >
+            <div class="flex justify-center items-center gap-x-2">
+              <div class="relative top-4 left-4">
+                <div
+                  class="fixed hidden bg-slate-700 text-white px-4 py-2 text-sm coding-profile"
+                >
+                  <li class="hover:underline hover:text-violet-500">
+                    <a href="https://leetcode.com/u/sonu2027/" target="_blank"
+                      >LeetCode</a
+                    >
+                  </li>
+                  <li class="hover:underline hover:text-violet-500">
+                    <a
+                      href="https://www.geeksforgeeks.org/user/takeinfo2u/"
+                      target="_blank"
+                      >GeeksforGeeks</a
+                    >
+                  </li>
+                  <li class="hover:underline hover:text-violet-500">
+                    <a
+                      href="https://www.naukri.com/code360/profile/433a370a-3604-4a65-b6a5-bcfe5d32fffe"
+                      target="_blank"
+                      >CodingNinja</a
+                    >
+                  </li>
+                  <li class="hover:underline hover:text-violet-500">
+                    <a
+                      href="https://www.hackerrank.com/profile/takeinfo2u"
+                      target="_blank"
+                      >HackerRank</a
+                    >
+                  </li>
+                </div>
+              </div>
+              <div class="hover:text-blue-600">Coding profile</div>
+              <div class="pt-1 arrowup">
+                <i class="fa-solid fa-sort-up"></i>
+              </div>
+              <div class="pt-1 arrowdown hidden">
+                <i class="fa-solid fa-caret-down"></i>
+              </div>
+            </div>
+          </div>
+
           <li
             class="flex text-sm justify-center items-center gap-x-2 bg-blue-600 text-white rounded-md px-4 py-1 active:text-black hover:text-green-300 cursor-pointer"
           >
@@ -83,7 +131,9 @@
         />
         <div class="text-center text-2xl sm:text-3xl md:text-3xl lg:text-4xl">
           Hello 👋, i’m
-          <div class="text-2xl sm:text-3xl font-medium text-blue-600 lg:text-4xl">
+          <div
+            class="text-2xl sm:text-3xl font-medium text-blue-600 lg:text-4xl"
+          >
             Sonu Mondal
           </div>
           MERN stack developer | Exploring Machine Learning
@@ -161,21 +211,33 @@
       <div
         class="flex justify-center items-center flex-col text-2xl font-medium rounded-md p-2 bg-violet-600 text-white"
       >
-        <img class="h-16 w-16 md:h-20 md:w-20" src="./assets/skills/c.png" alt="C Logo" />
+        <img
+          class="h-16 w-16 md:h-20 md:w-20"
+          src="./assets/skills/c.png"
+          alt="C Logo"
+        />
         <p>C</p>
       </div>
 
       <div
         class="flex justify-center items-center flex-col text-2xl font-medium rounded-md p-2 bg-violet-600 text-white"
       >
-        <img class="h-16 w-16 md:h-20 md:w-20" src="./assets/skills/cpp.png" alt="C++ Logo" />
+        <img
+          class="h-16 w-16 md:h-20 md:w-20"
+          src="./assets/skills/cpp.png"
+          alt="C++ Logo"
+        />
         <p>C++</p>
       </div>
 
       <div
         class="flex justify-center items-center flex-col text-2xl font-medium rounded-md p-2 bg-violet-600 text-white"
       >
-        <img class="h-16 w-16 md:h-20 md:w-20" src="./assets/skills/oops.png" alt="OOPs Logo" />
+        <img
+          class="h-16 w-16 md:h-20 md:w-20"
+          src="./assets/skills/oops.png"
+          alt="OOPs Logo"
+        />
         <p>OOPs</p>
       </div>
 
@@ -193,7 +255,11 @@
       <div
         class="flex justify-center items-center flex-col text-2xl font-medium rounded-md p-2 bg-violet-600 text-white"
       >
-        <img class="h-16 w-16 md:h-20 md:w-20" src="./assets/skills/dsa.png" alt="DSA Logo" />
+        <img
+          class="h-16 w-16 md:h-20 md:w-20"
+          src="./assets/skills/dsa.png"
+          alt="DSA Logo"
+        />
         <p>DSA</p>
       </div>
 
@@ -222,7 +288,11 @@
       <div
         class="flex justify-center items-center flex-col text-2xl font-medium rounded-md p-2 bg-violet-600 text-white"
       >
-        <img class="h-16 w-16 md:h-20 md:w-20" src="./assets/skills/css.png" alt="CSS Logo" />
+        <img
+          class="h-16 w-16 md:h-20 md:w-20"
+          src="./assets/skills/css.png"
+          alt="CSS Logo"
+        />
         <p>CSS3</p>
       </div>
 
@@ -240,7 +310,11 @@
       <div
         class="flex justify-center items-center flex-col text-2xl font-medium rounded-md p-2 bg-violet-600 text-white"
       >
-        <img class="h-16 w-16 md:h-20 md:w-20" src="./assets/skills/jslogo.png" alt="JS Logo" />
+        <img
+          class="h-16 w-16 md:h-20 md:w-20"
+          src="./assets/skills/jslogo.png"
+          alt="JS Logo"
+        />
         <p>JavaScript</p>
       </div>
 
@@ -269,14 +343,22 @@
       <div
         class="flex justify-center items-center flex-col text-2xl font-medium rounded-md p-2 bg-violet-600 text-white"
       >
-        <img class="h-16 w-16 md:h-20 md:w-20" src="./assets/skills/git.png" alt="GIT Logo" />
+        <img
+          class="h-16 w-16 md:h-20 md:w-20"
+          src="./assets/skills/git.png"
+          alt="GIT Logo"
+        />
         <p class="text-center">Git and GitHub</p>
       </div>
 
       <div
         class="flex justify-center items-center flex-col text-2xl font-medium rounded-md p-2 bg-violet-600 text-white"
       >
-        <img class="h-16 w-16 md:h-20 md:w-20" src="./assets/skills/mySql.png" alt="SQl Logo" />
+        <img
+          class="h-16 w-16 md:h-20 md:w-20"
+          src="./assets/skills/mySql.png"
+          alt="SQl Logo"
+        />
         <p>MySQL</p>
       </div>
 
@@ -324,125 +406,125 @@
       class="grid grid-cols-1 md:grid-cols-2 md:gap-x-4 2xl:grid-cols-3 mx-4 sm:mx-8 md:mx-12 lg:mx-20"
     >
       <div
-        class="bg-white border-2 border-solid border-gray-300 shadow-2xl shadow-slate-300 py-4 px-2 rounded-md mt-6"
+        class="bg-slate-900 border-2 border-solid border-gray-400 shadow-2xl shadow-slate-900 rounded-xl mt-6"
       >
-        <div class="text-center text-2xl font-medium text-blue-500">
+        <div class="text-center text-2xl font-medium text-yellow-500 mt-4">
           Image gallery
         </div>
 
-        <img
-          class="rounded-md mt-4 mb-1"
-          src="./assets/project/image-gallery.png"
-          alt="Image-gallery"
-        />
-
-        <div class="mt-2 text-violet-400 font-medium">
+        <div class="mt-2 text-gray-300 font-medium px-2">
           Image gallery platform, featuring seamless signup/login with email
           verification. Users can upload, manage, and customize their images and
           profile details with ease. Enjoy complete CRUD functionality for
           enhanced control over your content.
         </div>
 
-        <div class="mt-4">
-          <div class="text-xl">Technology used</div>
-          <div class="text-blue-400 font-medium">
+        <div class="mt-4 px-2">
+          <div class="text-xl text-yellow-500">Technology used</div>
+          <div class="text-gray-300 font-medium">
             React.js | Tailwind CSS | MongoDB | Node.js | Express.js
           </div>
         </div>
 
-        <div class="flex justify-start items-center gap-x-4 mt-4">
-          <div class="text-2xl">Visit:</div>
-          <div class="text-2xl md:text-3xl rounded-full text-blue-900">
+        <div class="flex justify-start items-center gap-x-4 mt-4 px-2">
+          <div class="text-2xl text-white">Visit:</div>
+          <div class="text-2xl md:text-3xl rounded-full text-yellow-500">
             <a
               target="_blank"
               href="https://github.com/sonu2027/MERN-Stack-Development/tree/main/Backend/Image-gallery"
               ><i class="fa-brands fa-square-github"></i
             ></a>
           </div>
-          <div class="text-2xl md:text-3xl rounded-full text-blue-900">
+          <div class="text-2xl md:text-3xl rounded-full text-yellow-500">
             <a target="_blank"><i class="fa-solid fa-globe"></i></a>
           </div>
         </div>
+
+        <img
+          class="rounded-b-xl mt-4"
+          src="./assets/project/image-gallery.png"
+          alt="Image-gallery"
+        />
       </div>
 
       <div
-        class="bg-white border-2 border-solid border-gray-300 shadow-2xl shadow-slate-300 py-4 px-2 rounded-md mt-6"
+        class="bg-slate-900 border-2 border-solid border-gray-400 shadow-2xl shadow-slate-900 rounded-xl mt-6"
       >
-        <div class="text-center text-2xl font-medium text-blue-500">
+        <div class="text-center text-2xl font-medium text-yellow-500 mt-4">
           Zomato Clone
         </div>
 
-        <img
-          class="rounded-md mt-4 mb-1"
-          src="./assets/project/zomato-clone.png"
-          alt="zomato-clone"
-        />
-
-        <div class="mt-2 text-violet-400 font-medium">
+        <div class="mt-2 text-gray-300 font-medium px-2">
           Presenting a React JS-powered Zomato clone, meticulously crafted with
           CSS. Experience the convenience of browsing, ordering, and reviewing
           restaurants, all in a familiar and user-friendly interface.
         </div>
 
-        <div class="mt-4">
-          <div class="text-xl">Technology used</div>
-          <div class="text-blue-400 font-medium">React.js | CSS</div>
+        <div class="mt-4 px-2">
+          <div class="text-xl text-yellow-500">Technology used</div>
+          <div class="text-gray-300 font-medium">React.js | CSS</div>
         </div>
 
-        <div class="flex justify-start items-center gap-x-4 mt-4">
-          <div class="text-2xl">Visit:</div>
-          <div class="text-2xl md:text-3xl rounded-full text-blue-900">
+        <div class="flex justify-start items-center gap-x-4 mt-4 px-2">
+          <div class="text-2xl text-white">Visit:</div>
+          <div class="text-2xl md:text-3xl rounded-full text-yellow-500">
             <a target="_blank" href="https://github.com/sonu2027/Zomato-Clone"
               ><i class="fa-brands fa-square-github"></i
             ></a>
           </div>
-          <div class="text-2xl md:text-3xl rounded-full text-blue-900">
+          <div class="text-2xl md:text-3xl rounded-full text-yellow-500">
             <a target="_blank" href="https://zonatoclone.vercel.app"
               ><i class="fa-solid fa-globe"></i
             ></a>
           </div>
         </div>
+        <img
+          class="rounded-b-xl mt-4"
+          src="./assets/project/zomato-clone.png"
+          alt="zomato-clone"
+        />
       </div>
 
       <div
-        class="bg-white border-2 border-solid border-gray-300 shadow-2xl shadow-slate-300 py-4 px-2 rounded-md mt-6"
+        class="bg-slate-900 border-2 border-solid border-gray-400 shadow-2xl shadow-slate-900 rounded-xl mt-6"
       >
-        <div class="text-center text-2xl font-medium text-blue-500">Todo</div>
+        <div class="text-center text-2xl font-medium text-yellow-500 mt-4">
+          Todo
+        </div>
 
-        <img
-          class="rounded-md mt-4 mb-1"
-          src="./assets/project/todo-kart.png"
-          alt="todo-kart"
-        />
-
-        <div class="mt-2 text-violet-400 font-medium">
+        <div class="mt-2 text-gray-300 font-medium px-2">
           Todo web app, built with ReactJS and TailwindCSS, powered by Appwrite
           database. Seamlessly sign up, log in, and manage tasks. Easily add,
           delete, and mark tasks as completed
         </div>
 
-        <div class="mt-4">
-          <div class="text-xl">Technology used</div>
-          <div class="text-blue-400 font-medium">
+        <div class="mt-4 px-2">
+          <div class="text-xl text-yellow-500">Technology used</div>
+          <div class="text-gray-300 font-medium">
             React.js | Tailwind CSS | Appwrite
           </div>
         </div>
 
-        <div class="flex justify-start items-center gap-x-4 mt-4">
-          <div class="text-2xl">Visit:</div>
-          <div class="text-2xl md:text-3xl rounded-full text-blue-900">
+        <div class="flex justify-start items-center gap-x-4 mt-4 px-2">
+          <div class="text-2xl text-white">Visit:</div>
+          <div class="text-2xl md:text-3xl rounded-full text-yellow-500">
             <a
               target="_blank"
               href="https://github.com/sonu2027/todo-appwrite-backend"
               ><i class="fa-brands fa-square-github"></i
             ></a>
           </div>
-          <div class="text-2xl md:text-3xl rounded-full text-blue-900">
+          <div class="text-2xl md:text-3xl rounded-full text-yellow-500">
             <a target="_blank" href="https://todokart.vercel.app"
               ><i class="fa-solid fa-globe"></i
             ></a>
           </div>
         </div>
+        <img
+          class="rounded-b-xl mt-4"
+          src="./assets/project/todo-kart.png"
+          alt="todo-kart"
+        />
       </div>
     </div>
 
@@ -476,9 +558,13 @@
             Narula Institute of Technology
           </div>
         </div>
+        <div class="mt-2 flex justify-start items-center gap-x-2">
+          <div class="text-white text-2xl">--</div>
+          <div class="text-gray-200 font-medium">CGPA: 7.8</div>
+        </div>
       </div>
 
-      <div
+      <!-- <div
         class="bg-violet-600 border-2 border-solid border-gray-300 shadow-2xl shadow-slate-300 py-4 px-2 rounded-md mt-6"
       >
         <div class="flex justify-start items-center gap-x-2">
@@ -495,9 +581,9 @@
           <div><i class="fa-solid fa-building-columns"></i></div>
           <div class="text-gray-200 font-medium">Alipore takshal vidyapith</div>
         </div>
-      </div>
+      </div> -->
 
-      <div
+      <!-- <div
         class="bg-violet-600 border-2 border-solid border-gray-300 shadow-2xl shadow-slate-300 py-4 px-2 rounded-md mt-6"
       >
         <div class="flex justify-start items-center gap-x-2">
@@ -514,10 +600,10 @@
           <div><i class="fa-solid fa-building-columns"></i></div>
           <div class="text-gray-200 font-medium">Alipore takshal vidyapith</div>
         </div>
-      </div>
+      </div> -->
     </div>
 
-    <div class="mt-10 mb-5 hidden justify-start items-center">
+    <!-- <div class="mt-10 mb-5 justify-start items-center">
       <div
         class="border-2 bg-blue-500 border-solid flex justify-between px-2 caret-slate-50 items-center w-full sm:w-2/3 md:w-2/4 lg:w-2/5 mx-4 sm:mx-8 md:mx-12 lg:mx-20 rounded-md"
       >
@@ -533,21 +619,39 @@
           Add
         </button>
       </div>
-    </div>
+    </div> -->
 
-    <div class="hidden flex-col gap-y-4 bg-black rounded-md mx-4 sm:mx-8 md:12 lg:mx-20 allcomment"></div>
+    <!-- <div
+      class="flex-col gap-y-4 bg-black rounded-md mx-4 sm:mx-8 md:12 lg:mx-20 allcomment"
+    ></div> -->
 
-    <div class="justify-center items-center fixed w-screen top-1/3 hidden popup">
+    <!-- <div
+      class="justify-center items-center fixed w-screen top-1/3 hidden popup"
+    >
       <div
-        class="flex gap-y-4 flex-col justify-center items-center bg-white w-2/3 sm:w-96 border-2 border-solid border-blue-600 py-4 rounded-md "
+        class="flex gap-y-4 flex-col justify-center items-center bg-white w-2/3 sm:w-96 border-2 border-solid border-blue-600 py-4 rounded-md"
       >
-        <input class=" focus:outline-none bg-slate-500 h-10 caret-white px-2 rounded-md name text-white" type="text" placeholder="Enter your name"/>
-        <div class="flex justify-center items-center gap-x-2 bg-white ">
-          <button class="bg-gray-400 rounded-md px-4 py-1 text-violet-600 font-medium cancel" type="submit">cancel</button>
-          <button class="rounded-md px-4 py-1 text-white bg-violet-600 submit" type="submit">Submit</button>
+        <input
+          class="focus:outline-none bg-slate-500 h-10 caret-white px-2 rounded-md name text-white"
+          type="text"
+          placeholder="Enter your name"
+        />
+        <div class="flex justify-center items-center gap-x-2 bg-white">
+          <button
+            class="bg-gray-400 rounded-md px-4 py-1 text-violet-600 font-medium cancel"
+            type="submit"
+          >
+            cancel
+          </button>
+          <button
+            class="rounded-md px-4 py-1 text-white bg-violet-600 submit"
+            type="submit"
+          >
+            Submit
+          </button>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <script src="./index.js" type="module"></script>
   </body>
