@@ -97,7 +97,7 @@ const showHamburgerMenu = () => {
 
       const a = document.createElement("a");
       a.target = "_blank";
-      a.href = "./assets/newResume.pdf";
+      a.href = "./assets/My-Updated-Resume.pdf";
       a.className = "flex gap-x-2 justify-center items-center";
 
       const div1 = document.createElement("div1");
